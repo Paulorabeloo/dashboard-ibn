@@ -25,7 +25,7 @@ Conecta direto na planilha do Google Sheets onde as consultoras registram cada m
 - **Heatmap especialização** — vendedora × produto, especialista vs generalista
 - **Filtros encadeáveis** — ciclo, mês, dia, polo, produto persistidos em URL
 - **Comparativos justos** — "mesmo ponto" do ciclo anterior, não ciclo inteiro
-- **Análise offline** — script Node gera relatório estatístico dos dados
+- **Análise offline** — script Node gera relatório estatístico dos dados.
 
 ## Stack
 
