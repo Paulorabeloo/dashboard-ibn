@@ -1,10 +1,10 @@
-# Sales Dashboard — IBN
+# IBN Sales Dashboard
 
 Internal web dashboard that replaced a legacy BI tool. It turns a Google Sheets
 operation into 13 decision-oriented KPIs, each one answering a question a manager
 actually asks.
 
-> **Privacy note:** this repository ships **no production data**. Test fixtures are
+> **Privacy note:** this repository ships no production data. Test fixtures are
 > fully synthetic, the access allowlist is read from an environment variable, and
 > the polo alias map is intentionally empty.
 
@@ -15,18 +15,18 @@ actually asks.
 | Overlaid cohort curves | Are we ahead of or behind previous cycles? |
 | Close projection | If the current pace holds, where do we land? |
 | Seller Pareto | How concentrated is revenue in a single person? |
-| Day × hour heatmap | When is the real closing window? |
+| Day by hour heatmap | When is the real closing window? |
 | Z-score outlier detection | Who is off the curve, up or down? |
 | Channel evolution per cycle | Which source is growing and which is fading? |
 
 ## Stack
 
-- **Next.js 14** (App Router) + **TypeScript**
+- **Next.js 14** (App Router) with **TypeScript**
 - **Tailwind CSS** for styling
 - **Auth.js / NextAuth** with Google OAuth and an email allowlist
 - **Google Sheets API** as the data source, behind a typed adapter layer
-- **Vitest** (unit + integration) and **Playwright** (E2E)
-- **GitHub Actions** for CI, **ESLint** + **Prettier** for code style
+- **Vitest** (unit and integration) and **Playwright** (E2E)
+- **GitHub Actions** for CI, **ESLint** and **Prettier** for code style
 
 ## Architecture
 
@@ -41,7 +41,7 @@ middleware.ts           Edge-level route protection
 ```
 
 Access control is enforced twice: once in Auth.js and once in the Edge
-middleware. The allowlist is **fail-closed** — an empty list denies everyone.
+middleware. The allowlist is fail-closed, so an empty list denies everyone.
 
 ## Getting started
 
@@ -65,7 +65,7 @@ pnpm dev
 ## Tests
 
 ```bash
-pnpm test         # Vitest: unit + integration
+pnpm test         # Vitest: unit and integration
 pnpm test:e2e     # Playwright: end-to-end
 ```
 
@@ -73,13 +73,13 @@ Operational procedures are documented in [`docs/runbook.md`](docs/runbook.md).
 
 ---
 
-# Dashboard de Vendas — IBN
+# Dashboard de Vendas IBN
 
 Dashboard web interno que substituiu uma ferramenta de BI legada. Ele transforma
 uma operação rodando em Google Sheets em 13 KPIs orientados à decisão, cada um
 respondendo a uma pergunta que um gestor realmente faz.
 
-> **Nota de privacidade:** este repositório não contém **nenhum dado de produção**.
+> **Nota de privacidade:** este repositório não contém nenhum dado de produção.
 > As fixtures de teste são inteiramente sintéticas, a allowlist de acesso vem de
 > variável de ambiente e o mapa de aliases de polos está intencionalmente vazio.
 
@@ -90,18 +90,18 @@ respondendo a uma pergunta que um gestor realmente faz.
 | Curvas de cohort sobrepostas | Estamos à frente ou atrás dos ciclos passados? |
 | Projeção de fechamento | Se mantiver o ritmo, fechamos com quanto? |
 | Pareto de vendedoras | Qual é a concentração de risco em uma pessoa? |
-| Heatmap dia × hora | Qual é a janela real de fechamento? |
+| Heatmap de dia por hora | Qual é a janela real de fechamento? |
 | Detecção de outliers por z-score | Quem está fora da curva, para cima ou para baixo? |
 | Evolução de canais por ciclo | Qual fonte está crescendo e qual está murchando? |
 
 ## Stack
 
-- **Next.js 14** (App Router) + **TypeScript**
+- **Next.js 14** (App Router) com **TypeScript**
 - **Tailwind CSS** para estilização
 - **Auth.js / NextAuth** com Google OAuth e allowlist de e-mails
 - **Google Sheets API** como fonte de dados, atrás de uma camada de adapter tipada
-- **Vitest** (unitário + integração) e **Playwright** (E2E)
-- **GitHub Actions** para CI, **ESLint** + **Prettier** para padrão de código
+- **Vitest** (unitário e integração) e **Playwright** (E2E)
+- **GitHub Actions** para CI, **ESLint** e **Prettier** para padrão de código
 
 ## Arquitetura
 
@@ -116,7 +116,7 @@ middleware.ts           Proteção de rotas na camada Edge
 ```
 
 O controle de acesso é aplicado duas vezes: no Auth.js e no middleware Edge.
-A allowlist é **fail-closed** — lista vazia nega o acesso de todo mundo.
+A allowlist é fail-closed, então lista vazia nega o acesso de todo mundo.
 
 ## Como rodar
 
@@ -140,7 +140,7 @@ pnpm dev
 ## Testes
 
 ```bash
-pnpm test         # Vitest: unitário + integração
+pnpm test         # Vitest: unitário e integração
 pnpm test:e2e     # Playwright: ponta a ponta
 ```
 
