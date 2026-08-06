@@ -1,3 +1,6 @@
+
+https://github.com/user-attachments/assets/13aa1f20-84fe-4b1e-99c8-8ffda93a842f
+Uploading IMG_6743.MP4…
 # IBN Sales Dashboard
 
 Internal web dashboard that replaced a legacy BI tool. It turns a Google Sheets
