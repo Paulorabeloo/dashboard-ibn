@@ -1,5 +1,4 @@
 https://github.com/user-attachments/assets/13aa1f20-84fe-4b1e-99c8-8ffda93a842f
-<img width="1896" height="905" alt="image" src="https://github.com/user-attachments/assets/9efe6293-363f-42f6-a735-e1042d9b18cc" />
 
 # IBN Sales Dashboard
 
